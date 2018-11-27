@@ -6,6 +6,7 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
+    @pets = default_pets
   end
   
   def self.all
