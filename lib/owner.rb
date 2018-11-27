@@ -40,7 +40,7 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs].each { |i| }
+    @pets[:dogs].each { |i| i.mood = "happy"}
   end
   
 end
