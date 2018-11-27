@@ -58,7 +58,7 @@ class Owner
     @pets.each do |key, value|
       value.each { |i| i.mood = "nervous"}
     end
-    @pets 
+    @pets = default_pets
   end
   
 end
