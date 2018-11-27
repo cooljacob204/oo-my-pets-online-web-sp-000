@@ -61,4 +61,8 @@ class Owner
     @pets = default_pets
   end
   
+  def list_pets
+    
+  end
+  
 end
