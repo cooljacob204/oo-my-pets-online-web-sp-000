@@ -6,8 +6,6 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    
-    @pets = {:fishes => [], :dogs => [], :cats => []}
   end
   
   def self.all
@@ -20,6 +18,10 @@ class Owner
   
   def self.count
     @@all.size
+  end
+  
+  def default_pets
+    {:fishes => [], :dogs => [], :cats => []}
   end
   
   def say_species
@@ -55,6 +57,7 @@ class Owner
     @pets.each do |key, value|
       value.each { |i| i.mood = "nervous"}
     end
+    @pets 
   end
   
 end
